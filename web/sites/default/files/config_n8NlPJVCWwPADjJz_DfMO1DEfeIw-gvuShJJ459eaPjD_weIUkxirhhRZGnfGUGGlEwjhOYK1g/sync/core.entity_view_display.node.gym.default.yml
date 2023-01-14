@@ -1,0 +1,55 @@
+uuid: a62df72b-ee01-4739-b0cb-331c07ea16bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gym.field_description
+    - field.field.node.gym.field_logo
+    - field.field.node.gym.field_outlets
+    - node.type.gym
+    - views.view.recent_articles
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.gym.default
+targetEntityType: node
+bundle: gym
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_logo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_outlets:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: dbd4853f-3b1c-4d05-8f60-85887f63d515
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_gym_rates
+field_name: field_gym_rates
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
